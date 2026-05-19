@@ -1,0 +1,55 @@
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE and local workspace files
+.idea/
+.vscode/
+*.iml
+.codex
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Dataset files
+data/MNIST/
+data/raw/
+data/processed/
+
+# Training outputs and generated artifacts (keep only .gitkeep placeholders)
+outputs/checkpoints/*
+!outputs/checkpoints/.gitkeep
+outputs/figures/*
+!outputs/figures/.gitkeep
+outputs/logs/*
+!outputs/logs/.gitkeep
+outputs/predictions/*
+!outputs/predictions/.gitkeep
+report/assets/*
+!report/assets/.gitkeep
+
+# Model weights and logs
+*.pth
+*.pt
+*.ckpt
+*.log
+
+# Office and report binaries
+report/*.docx
+report/~$*.docx
+
+# OS / editor temp files
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+*.swo
